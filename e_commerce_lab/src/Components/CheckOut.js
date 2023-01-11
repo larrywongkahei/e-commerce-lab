@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import { useNavigate } from "react-router";
 
 const Checkout = () =>{
-    const params = useParams()
     const [status, setStatus] = useState(false)
     
     const navigate = useNavigate()
@@ -14,6 +13,7 @@ const Checkout = () =>{
     useEffect(() => {
         if(status){
             navigate("/")
+            window.location.reload()
         }
     }, [status])
 

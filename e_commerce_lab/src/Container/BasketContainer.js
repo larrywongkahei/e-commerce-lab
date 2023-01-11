@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const BasketContainer = ({basket}) => {
 const arrayOfPrice = []
 const handleCheckOut = (totalPrice) =>{
+    
     return navigate(`/checkout/${totalPrice}`)
 }
 const navigate = useNavigate() 
@@ -15,7 +16,7 @@ const basketItems = basket.map((item) => {
 })
 const initialValue = 0;
 const totalPrice = arrayOfPrice.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
+  (previousPrice, currentPrice) => previousPrice + currentPrice,
   initialValue
 );
 

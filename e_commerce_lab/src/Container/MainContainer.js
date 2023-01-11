@@ -12,7 +12,8 @@ const MainContainer = () =>{
 
     useEffect(()=>{
         console.log(basket)
-    }, [basket])
+        setBasket([])
+    }, [window.location.pathname])
 
     const addToBasket = (item) =>{
         const newBasketList = [...basket, item];
