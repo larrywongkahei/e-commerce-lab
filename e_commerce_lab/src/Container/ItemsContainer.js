@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+const ItemContainer = () => {
+
 const items = [
     {
         "Name": 'Espresso',
@@ -18,3 +21,14 @@ const items = [
         "Price": 8
     }
 ]
+
+    return (
+        <>
+            <ItemList />
+        </>
+
+)
+
+
+}
+
