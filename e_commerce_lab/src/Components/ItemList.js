@@ -1,13 +1,20 @@
 import React from 'react'
 import ItemElement from './ItemElement'
 
-const ItemList = ({name, price}) => {
+const ItemList = ({items}) => {
 
+    const itemNodes = items.map((item) => {
+        return (
+        <li>
+            <h2>{item.name}{item.price}</h2>
+        </li>
+        )
+    })
 
     return (
         <div>
             <ul>
-                <h2>{name} {price}</h2>
+                {itemNodes}
             </ul>
         </div>
     )
