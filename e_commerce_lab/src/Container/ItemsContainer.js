@@ -6,26 +6,30 @@ const ItemContainer = () => {
 
 const items = [
     {
-        "Name": 'Espresso',
-        "Price": 5
+        name : 'Espresso',
+        price : 5
     },
     {
-        "Name": 'Americano',
-        "Price": 7
+        name : 'Americano',
+        price : 7
     },
     {
-        "Name": 'Cappuccino',
-        "Price": 7
+        name : 'Cappuccino',
+        price : 7
     },
     {
-        "Name": 'Mocha',
-        "Price": 8
+        name : 'Mocha',
+        price : 8
     }
 ]
 
+const itemProps = items.map((item) => {
+    return <ItemList name={item.name} price={item.price}/>
+})
+
     return (
         <>
-            <ItemList />
+            {itemProps}
         </>
 
 )

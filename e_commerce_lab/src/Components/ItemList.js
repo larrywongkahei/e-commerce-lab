@@ -1,15 +1,13 @@
 import React from 'react'
 import ItemElement from './ItemElement'
 
-const ItemList = () => {
+const ItemList = ({name, price}) => {
 
-const itemNodes = <ItemElement />
 
     return (
         <div>
             <ul>
-                <h2>I am item list</h2>
-                {/* {itemNodes} */}
+                <h2>{name} {price}</h2>
             </ul>
         </div>
     )
