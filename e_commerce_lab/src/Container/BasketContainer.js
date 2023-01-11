@@ -1,14 +1,25 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const BasketContainer = ({basket}) => {
 const arrayOfPrice = []
-
+const handleCheckOut = () =>{
+    return navigate("/checkout")
+}
+const navigate = useNavigate() 
 const basketItems = basket.map((item) => {
-    arrayOfPrice.push(parseInt(item.price))
-    return <li>{item.name}{item.price}</li>
+    arrayOfPrice.push((item.price))
+    return <ul>
+        <li>
+        {item.name}
+        </li>
+        <p>
+        Price:£{item.price}
+        </p>
+        </ul>
 })
 const initialValue = 0;
-const sumWithInitial = arrayOfPrice.reduce(
+const totalPrice = arrayOfPrice.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
   initialValue
 );
@@ -16,8 +27,10 @@ const sumWithInitial = arrayOfPrice.reduce(
 
     return(
         <ul>
+            <h3>Drink</h3>
             {basketItems}
-            {sumWithInitial}
+            {arrayOfPrice.length > 0? `Total:£${totalPrice}`: ""}
+            <button onClick={handleCheckOut}>Checkout</button>
         </ul>
     )
 }

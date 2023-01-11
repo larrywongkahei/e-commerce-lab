@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from '../Components/NavBar';
-import { redirect, BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import ItemContainer from './ItemsContainer';
 import items from '../data/items';
 import BasketContainer from './BasketContainer';
+import Checkout from '../Components/CheckOut';
 
 const MainContainer = () =>{
 
@@ -26,6 +27,7 @@ const MainContainer = () =>{
                 <Route path="/Items" element={<ItemContainer addToBasket={addToBasket} items={items} />}/>
                 <Route path="/Basket" element={<BasketContainer basket={basket} />}/>
                 <Route path='/redirect-page' element={ <redirect to="/" /> }/>
+                <Route path='/checkout' element={<Checkout />}/>
             </Routes>
         </Router>
     )
