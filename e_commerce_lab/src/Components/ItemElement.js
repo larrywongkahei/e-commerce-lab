@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ItemElement = () => {
+const ItemElement = ({name, price}) => {
 
 
 
     return (
-        <li><p>I am the item element</p></li>
+        <li><p>{name}{price}</p></li>
     )
 }
 

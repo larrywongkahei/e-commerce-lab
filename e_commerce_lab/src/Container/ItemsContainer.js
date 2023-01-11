@@ -34,3 +34,5 @@ const items = [
 
 }
 
+export default ItemContainer;
+

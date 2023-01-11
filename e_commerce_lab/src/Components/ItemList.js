@@ -3,11 +3,10 @@ import ItemElement from './ItemElement'
 
 const ItemList = ({items}) => {
 
-    const itemNodes = items.map((item) => {
+    const itemNodes = items.map((item, index) => {
         return (
-        <li>
-            <h2>{item.name}{item.price}</h2>
-        </li>
+        <ItemElement  key={index} name={item.name} price={item.price}/>
+
         )
     })
 
