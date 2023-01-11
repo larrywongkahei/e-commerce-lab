@@ -26,8 +26,8 @@ const MainContainer = () =>{
             <Routes>
                 <Route path="/Items" element={<ItemContainer addToBasket={addToBasket} items={items} />}/>
                 <Route path="/Basket" element={<BasketContainer basket={basket} />}/>
-                <Route path='/redirect-page' element={ <redirect to="/" /> }/>
-                <Route path='/checkout' element={<Checkout />}/>
+                <Route path='/*' element={ <redirect to="/" /> }/>
+                <Route path='/checkout/:price' element={<Checkout />}/>
             </Routes>
         </Router>
     )

@@ -1,14 +1,21 @@
-import React from "react";
-import { useNavigate } from "react-router";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router";
+
 const Checkout = () =>{
-
+    const params = useParams()
+    const [status, setStatus] = useState(false)
+    
     const navigate = useNavigate()
-
     const handlePay = () =>{
     alert("Failed to pay")
-    return navigate("/Home")
+    setStatus(true)
     }
 
+    useEffect(() => {
+        if(status){
+            navigate("/")
+        }
+    }, [status])
 
 
     return (

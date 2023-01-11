@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const BasketContainer = ({basket}) => {
 const arrayOfPrice = []
-const handleCheckOut = () =>{
-    return navigate("/checkout")
+const handleCheckOut = (totalPrice) =>{
+    return navigate(`/checkout/${totalPrice}`)
 }
 const navigate = useNavigate() 
 const basketItems = basket.map((item) => {
@@ -31,7 +31,7 @@ const totalPrice = arrayOfPrice.reduce(
                     <b>{arrayOfPrice.length > 0? `Total: £${totalPrice}`: ""}</b>
                 </li>
             </ul>
-        <button onClick={handleCheckOut} className='button-checkout'>Checkout</button>
+        <button onClick={() => handleCheckOut(`${totalPrice}`)} className='button-checkout'>Checkout</button>
     </div>
         // <div className='item-list-div-basket'>
         //     <ul className='item-list-ul'>
