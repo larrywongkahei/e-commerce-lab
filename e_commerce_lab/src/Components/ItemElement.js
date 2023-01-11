@@ -5,12 +5,11 @@ const ItemElement = ({item}) => {
 
 
     return (
-        <form>
-            <li>
-                <p>{item.name}{item.price}</p>
-                
-            </li>
-        </form>
+
+        <li className='item-li'>
+            <p>{item.name}</p>
+            <p>£{item.price}</p>
+        </li>
 )
 }
 
