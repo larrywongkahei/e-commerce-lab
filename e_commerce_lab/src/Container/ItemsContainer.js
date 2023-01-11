@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ItemList from '../Components/ItemList';
 
 
-const ItemContainer = () => {
+const ItemContainer = ({addToBasket}) => {
+
+const [checkedItems, setCheckItems] = useState([])
+
+
 
 const items = [
     {
@@ -26,7 +30,7 @@ const items = [
 
     return (
         <>
-            <ItemList items={items}/>
+            <ItemList items={items} addToBasket={addToBasket}/>
         </>
 
 )

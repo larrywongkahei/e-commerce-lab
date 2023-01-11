@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const ItemElement = ({name, price}) => {
+const ItemElement = ({item}) => {
 
 
 
     return (
-        <li><p>{name}{price}</p></li>
-    )
+        <form>
+            <li>
+                <p>{item.name}{item.price}</p>
+                
+            </li>
+        </form>
+)
 }
 
 export default ItemElement;
