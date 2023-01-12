@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from '../Components/NavBar';
-import { Redirect, BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { Navigate, BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import ItemContainer from './ItemsContainer';
 import items from '../data/items';
 import BasketContainer from './BasketContainer';
@@ -32,7 +32,7 @@ const MainContainer = () =>{
             <Routes>
                 <Route path="/Items" element={<ItemContainer addToBasket={addToBasket} items={items} />}/>
                 <Route path="/Basket" element={<BasketContainer basket={basket} getTotalPrice={getTotalPrice}/>}/>
-                <Route path='/*' element={ <Redirect to="/" /> }/>
+                <Route path='/*' element={<Navigate to="/dashboard" />}/>
                 <Route path='/checkout/pay' element={<Checkout total={totalprice}/>}/>
             </Routes>
         </Router>
