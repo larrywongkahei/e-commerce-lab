@@ -22,7 +22,7 @@ jobs:
       - run: npm run build
       - aws-s3/sync:
           from: build
-          to: 's3://hit-parade-g34-larry/'
+          to: 's3://l-and-l-coffee-shop/'
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400" \
