@@ -13,7 +13,7 @@ const MainContainer = () =>{
     useEffect(()=>{
         console.log(basket)
         setBasket([])
-    }, [window.location.pathname])
+    }, [])
 
     const addToBasket = (item) =>{
         const newBasketList = [...basket, item];
