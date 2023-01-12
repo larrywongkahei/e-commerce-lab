@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const BasketContainer = ({basket}) => {
+const BasketContainer = ({basket, getTotalPrice}) => {
 const arrayOfPrice = []
 const handleCheckOut = () =>{
     if(totalPrice === 0){
         alert("No items selected")
     }else{
-        return navigate(`/checkout/${totalPrice}`)
+        getTotalPrice(totalPrice)
+        navigate(`/checkout/pay`)
     }
 }
 const navigate = useNavigate() 
@@ -35,7 +36,7 @@ const totalPrice = arrayOfPrice.reduce(
                     <b>{arrayOfPrice.length > 0? `Total: £${totalPrice}`: ""}</b>
                 </li>
             </ul>
-        <button onClick={() => handleCheckOut()} className='button-checkout'>Checkout</button>
+        <button onClick={handleCheckOut} className='button-checkout'>Checkout</button>
     </div>
         // <div className='item-list-div-basket'>
         //     <ul className='item-list-ul'>

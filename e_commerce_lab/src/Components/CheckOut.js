@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import { useParams } from "react-router";
 
-const Checkout = () =>{
-    const [status, setStatus] = useState(false)
-
-    const { price } = useParams()
-    
+const Checkout = ({total}) =>{
+    const [status, setStatus] = useState(false)    
     const navigate = useNavigate()
     const handlePay = () =>{
     alert("Failed to pay")
@@ -31,7 +27,7 @@ const Checkout = () =>{
             <label>Date of expiry:</label>
             <input type="tel" maxLength="2" /><input type="tel" maxLength="2"></input>
         </div>
-            <h1 className="h1-total">Total:{price}</h1>
+            <h1 className="h1-total">Total:{total}</h1>
             <div className="checkout-total-div">
             <input type="checkbox"></input>
             <button className="button-checkout" onClick={handlePay}>Checkout</button>
