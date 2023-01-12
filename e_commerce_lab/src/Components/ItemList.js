@@ -7,7 +7,7 @@ const ItemList = ({items, addToBasket}) => {
         return (
             <div className='item-element-div'>
                 <ItemElement  key={index} item={item}/>
-                <button  className="button-add" onClick={() => addToBasket(item)}>Add to Basket</button>
+                <button  data-testid="addbutton" className="button-add" onClick={() => addToBasket(item)}>Add to Basket</button>
             </div>
 
         )

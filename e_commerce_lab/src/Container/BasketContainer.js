@@ -26,7 +26,7 @@ const totalPrice = arrayOfPrice.reduce(
         <div className='item-list-div-basket'>
             {/* <h1><u>BASKET</u></h1> */}
             <ul className='item-list-ul'>
-                    {basketItems}
+                    <b className='basketItems'>{basketItems}</b>
                     <hr></hr>
                 <li className='total-li'>
                     <b>{arrayOfPrice.length > 0? `Total: £${totalPrice}`: ""}</b>
