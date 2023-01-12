@@ -5,7 +5,7 @@ const ItemList = ({items, addToBasket}) => {
 
     const itemNodes = items.map((item, index) => {
         return (
-            <div className='item-element-div'>
+            <div className='item-element-div' key={index}>
                 <ItemElement  key={index} item={item}/>
                 <button  data-testid="addbutton" className="button-add" onClick={() => addToBasket(item)}>Add to Basket</button>
             </div>

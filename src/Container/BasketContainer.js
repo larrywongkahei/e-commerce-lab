@@ -12,9 +12,9 @@ const handleCheckOut = () =>{
     }
 }
 const navigate = useNavigate() 
-const basketItems = basket.map((item) => {
+const basketItems = basket.map((item, index) => {
     arrayOfPrice.push((item.price))
-    return <li className='item-element-div'>
+    return <li className='item-element-div' key={index}>
         {item.name} £{item.price}
         </li>
 })
