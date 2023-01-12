@@ -1,21 +1,11 @@
-// import React from "react";
-// import { fireEvent, getByTestId, render } from "@testing-library/react";
-// import MainContainer from "../Container/MainContainer";
+import React from "react";
+import { render } from "@testing-library/react";
+import MainContainer from "../Container/MainContainer";
 
 
-// describe('Container', () =>{
-//     let container;
-//     beforeEach(() =>{ 
-//         container = render(<MainContainer/>);
-//     })
-//     it('Should be able to add items', ()=>{
-//         const addButton = container.getByTestId("addbutton");
-//         fireEvent.click(addButton)
-//         const basketList = container.getByTestId("")
-//     })
-
-
-
-
-// })
+describe('Container', () =>{
+    it('Should be able to render without crashing', ()=>{
+        render(<MainContainer />)
+    })
+})
     
