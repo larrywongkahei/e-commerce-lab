@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Redirect from 'react-router'
 import NavBar from '../Components/NavBar';
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { Redirect, BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import ItemContainer from './ItemsContainer';
 import items from '../data/items';
 import BasketContainer from './BasketContainer';
