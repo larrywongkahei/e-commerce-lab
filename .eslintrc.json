@@ -1,8 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es6": true
-    },
+        "es2020": true
+    }, 
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended"
@@ -11,7 +11,7 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 8,
+        "ecmaVersion": 2020,
         "sourceType": "module"
     },
     "plugins": [
