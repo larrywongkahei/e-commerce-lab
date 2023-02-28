@@ -1,9 +1,10 @@
 # l & l Coffee Shop
-`TreeHole` is a metaphor in HongKong, it is used to describe a place or a person that you could rely on to share your secrets and release your emotions. and they are most likely a listener, that is why they are called `TreeHole`
+
+This is the first pair e-commerce project that built with React.
 
 ## Brief Introduction
 
-A web application build with React Frontend and Django Backend that allows users to release emotions and stress. 
+A web application allows users to simulate adding coffees to bucket and checkout online.
 
 ## Features
 * edit profile
