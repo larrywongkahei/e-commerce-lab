@@ -20,4 +20,4 @@ A web application allows users to simulate adding coffees to basket and checkout
 
 ### Redirect
 
-<a href="http://l-and-l-coffee-shop.s3-website.eu-west-2.amazonaws.com/">To the page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/larrywongkahei/e-commerce-lab">To The Repo</a>
+<a href="http://l-and-l-coffee-shop.s3-website.eu-west-2.amazonaws.com/">To the page</a>
