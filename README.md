@@ -1,27 +1,23 @@
 # l & l Coffee Shop
 
-This is the first pair e-commerce project that built with React.
+This is the first pair e-commerce project that built with pure React.
 
 ## Brief Introduction
 
-A web application allows users to simulate adding coffees to bucket and checkout online.
+A web application allows users to simulate adding coffees to basket and checkout online.
 
 ## Features
-* edit profile
-* Add titles to favourite
-* Check all the favourite story
-* Choose to post private story and public story
-* Interact with comments by pressing the Like, Love and Dislike button
-* Check all the private and public stories the user posted
+
+* Add coffees to basket
+* Simlate check out
 
 
 ## Tools
 * Javascript
+* Cypress
 * React
-* Python
-* Django
-* SQLite
-* Tailwind CSS
+* CSS
 
-## Redirect
-<a href="https://larrywongkahei.github.io/TheTreeHole/">To the page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/larrywongkahei/TheTreeHoleBackend">To the BackEnd repo</a>
+### Redirect
+
+<a href="http://l-and-l-coffee-shop.s3-website.eu-west-2.amazonaws.com/">To the page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/larrywongkahei/e-commerce-lab">To The Repo</a>
